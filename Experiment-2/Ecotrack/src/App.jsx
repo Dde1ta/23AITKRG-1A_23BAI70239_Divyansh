@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router"
-import Login from "./pages/login"
+import Login from "./pages/Login"
 import Logs from "./pages/Logs"
 import DashboardLayout from "./pages/DashboardLayout"
 import DashboardAnalytics from "./pages/DashboardAnalytics"

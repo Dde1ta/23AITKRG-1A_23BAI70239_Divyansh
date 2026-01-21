@@ -1,21 +1,25 @@
 import {Link, Outlet} from 'react-router-dom';
+import './DashboardLayout.css';
 
 const DashboardLayout = () => {
     return (
-        <>
-            <h3>Dashboard</h3>
-            {
-            // nav bar is persitent
-            }
-            <nav> 
-                <Link to="summary">Summary</Link>
-                <Link to='analytics'>Analytics</Link>
-            </nav>
+        <div className="dashboard-container">
+            <div className="dashboard-header">
+                <h3>Dashboard</h3>
+                {
+                // nav bar is persistent
+                }
+                <nav className="dashboard-nav"> 
+                    <Link to="summary" className="nav-link">Summary</Link>
+                    <Link to='analytics' className="nav-link">Analytics</Link>
+                    <Link to='logs' className='nav-link'>Logs</Link>
+                </nav>
+            </div>
 
-            <hr />
-
-            <Outlet />
-        </>
+            <div className="dashboard-content">
+                <Outlet />
+            </div>
+        </div>
     )
 }
 

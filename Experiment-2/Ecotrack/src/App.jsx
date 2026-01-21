@@ -21,19 +21,13 @@ function App() {
             element={
               <ProtectedRoute>
                 <DashboardLayout />
-              </ProtectedRoute>}/>
-
-          <Route index element={<Login/>}/>
-
-          <Route path="summary" element={<DashboardSummary/>}></Route>
-          <Route path="analytics" element={<DashboardAnalytics/>}></Route>
-          
-          <Route path="/logs" element={
-            <ProtectedRoute>
-              <Logs/>
-            </ProtectedRoute>
-          }/>
-          
+              </ProtectedRoute>
+            }>
+            <Route index element={<DashboardSummary />} />
+            <Route path="summary" element={<DashboardSummary />} />
+            <Route path="analytics" element={<DashboardAnalytics />} />
+            <Route path="logs" element={<Logs/>}/>
+          </Route>
         </Routes>
       </BrowserRouter>
     </>

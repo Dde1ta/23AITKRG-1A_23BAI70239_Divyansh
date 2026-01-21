@@ -6,7 +6,7 @@ const Header = (props) => {
         <header style={
             {
             padding: "1rem",
-            backgroundColor: "#27ae60",
+            backgroundColor: "#6495ed",
             color: "wheat",
             textAlign: "center"
             }

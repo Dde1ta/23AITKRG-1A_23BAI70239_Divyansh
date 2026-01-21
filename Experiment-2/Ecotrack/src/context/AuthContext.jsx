@@ -15,7 +15,7 @@ const AuthContext = createContext(null);
 // they give it to children
 export const AuthProvider = ({children}) => {
 
-    const [isAuthenticated, setIsAuthenticated] = useState(false);
+    const [isAuthenticated, setIsAuthenticated] = useState(true);
     
     return (
         <AuthContext.Provider value={

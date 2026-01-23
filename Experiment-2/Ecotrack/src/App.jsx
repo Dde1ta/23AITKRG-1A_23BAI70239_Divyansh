@@ -22,8 +22,8 @@ function App() {
               <ProtectedRoute>
                 <DashboardLayout />
               </ProtectedRoute>
-            }>
-            <Route index element={<DashboardSummary />} />
+          }>
+            <Route index element={<DashboardAnalytics />} />
             <Route path="summary" element={<DashboardSummary />} />
             <Route path="analytics" element={<DashboardAnalytics />} />
             <Route path="logs" element={<Logs/>}/>

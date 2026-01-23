@@ -1,5 +1,6 @@
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from 'react-router-dom';
+import './login.css';
 
 const Login = () => {
     const {setIsAuthenticated} = useAuth();
@@ -12,13 +13,15 @@ const Login = () => {
     }
 
     return (
-        <>
-            <h3>login</h3>
-            
-            <button onClick={handleLogin}>
-                Login
-            </button>
-        </>
+        <div className="login-container">
+            <div className="login-box">
+                <h3>Login</h3>
+                
+                <button onClick={handleLogin} className="login-button">
+                    Login
+                </button>
+            </div>
+        </div>
     )
 }
 

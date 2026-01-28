@@ -1,0 +1,29 @@
+.dashboard-header {
+    background-color: #3162be;
+    padding: 1rem;
+    text-align: center;
+}
+
+.dashboard-header h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.dashboard-nav {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.dashboard-content {
+    padding: 1rem;
+}

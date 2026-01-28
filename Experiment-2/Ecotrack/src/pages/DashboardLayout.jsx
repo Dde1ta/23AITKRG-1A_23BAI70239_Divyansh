@@ -13,6 +13,7 @@ const DashboardLayout = () => {
                     <Link to="summary" className="nav-link">Summary</Link>
                     <Link to='analytics' className="nav-link">Analytics</Link>
                     <Link to='logs' className='nav-link'>Logs</Link>
+                    <Link to="settings" className='nav-link'>Settings</Link>
                 </nav>
             </div>
 

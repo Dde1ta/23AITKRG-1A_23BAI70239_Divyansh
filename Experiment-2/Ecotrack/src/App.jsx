@@ -6,6 +6,7 @@ import DashboardAnalytics from "./pages/DashboardAnalytics"
 import DashboardSummary from "./pages/DashboardSummary"
 import ProtectedRoute from "./routes/ProtectedRoute"
 import Header from "./components/Header"
+import DashboardSettings from "./pages/DashboardSettings"
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
             <Route path="summary" element={<DashboardSummary />} />
             <Route path="analytics" element={<DashboardAnalytics />} />
             <Route path="logs" element={<Logs/>}/>
+            <Route path="settings" element={<DashboardSettings/>}/>
           </Route>
         </Routes>
       </BrowserRouter>

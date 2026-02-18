@@ -8,6 +8,10 @@ const Logs = () => {
 
     const {data, status, error} = useSelector((state) => state.logs);
 
+    const HandelRefresh = () => {
+        dispatch(fetchLogs());
+    }
+
     useEffect( () => {
         if (status === "idle"){
             dispatch(fetchLogs());
@@ -34,6 +38,9 @@ const Logs = () => {
                     ))
                 }
             </ul>
+            <button onClick={HandelRefresh}>
+                Refresh.
+            </button>
         </div>
     )
 }

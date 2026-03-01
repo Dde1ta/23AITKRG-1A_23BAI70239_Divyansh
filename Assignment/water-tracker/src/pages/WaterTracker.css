@@ -1,0 +1,86 @@
+.tracker-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.tracker-title {
+  font-size: 1.5rem;
+  color: #2196f3;
+  margin-bottom: 1.5rem;
+}
+
+/* CounterDisplay */
+.counter-display {
+  background: #e3f2fd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.counter-number {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #2196f3;
+  line-height: 1;
+}
+
+.counter-label {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 0.4rem;
+}
+
+.goal-reached {
+  margin-top: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4caf50;
+}
+
+/* Buttons */
+.tracker-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.tracker-btn {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tracker-btn.add {
+  background: #2196f3;
+  color: white;
+}
+
+.tracker-btn.add:hover {
+  background: #1976d2;
+}
+
+.tracker-btn.remove {
+  background: #ef5350;
+  color: white;
+}
+
+.tracker-btn.remove:hover {
+  background: #c62828;
+}
+
+.tracker-btn.reset {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.tracker-btn.reset:hover {
+  background: #bdbdbd;
+}

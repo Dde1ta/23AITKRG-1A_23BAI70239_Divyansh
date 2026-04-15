@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`testing button UI snapshot 1`] = `
+<div>
+  <button
+    style="padding: 5px; background-color: rgb(104, 159, 56); color: white; cursor: pointer;"
+  >
+    Fetch logs
+  </button>
+</div>
+`;
